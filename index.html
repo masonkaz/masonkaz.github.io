@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,25 +13,43 @@
             background-color: powderblue;
         }
 
-        p {
-            left: 0;
-            line-height: 200px;
-            margin-top: -100px;
+        .centered {
             position: absolute;
             text-align: center;
+            left: 50%;
             top: 50%;
-            width: 100%;
+            transform: translate(-50%, -50%);
+            animation: fadeIn 2s;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
         }
     </style>
 </head>
 
 <body>
-    <p>mason kazebeer</p>
+    <div class="centered">
+        <p>mason kazebeer</p>
+        <nav>
+            <a href="https://www.github.com/masonkaz">github</a><br>
+            <a href="https://github.com/masonkaz/HearingAssistant/releases/tag/v1.0.0">hearing assistant (human-computer interaction final project)</a><br>
+            <a href="SEOProject/index.html">"shoes in a can" website (webdev final project)</a>
+        </nav>
+    </div>
 
-     . ／l、<br>
-    （ﾟ､ ｡７ <br>
-     l、ﾞ~ヽ <br>
-     じしf_, )ノ
-
+    <div class="kitty">
+        . ／l、<br>
+        （ﾟ､ ｡７ <br>
+        .l、ﾞ~ヽ <br>
+        .じしf_, )ノ
+    </div>
 </body>
+
 </html>
