@@ -4,6 +4,10 @@ body {
     animation: fadeIn 2s;
 }
 
+.kitty {
+    width: fit-content;
+}
+
 .centered {
     position: absolute;
     left: 50%;
