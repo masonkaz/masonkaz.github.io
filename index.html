@@ -7,49 +7,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex, nofollow" />
     <title>mason world</title>
-
-    <style>
-        body {
-            font-family: 'Courier New', Courier, monospace;
-            background-color: powderblue;
-        }
-
-        .centered {
-            position: absolute;
-            text-align: center;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-            animation: fadeIn 2s;
-        }
-
-        @keyframes fadeIn {
-            0% {
-                opacity: 0;
-            }
-
-            100% {
-                opacity: 1;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <div class="centered">
-        <p>mason kazebeer</p>
-        <nav>
-            <a href="https://www.github.com/masonkaz">github</a><br>
-            <a href="https://github.com/masonkaz/HearingAssistant/releases/tag/v1.0.0">hearing assistant (human-computer interaction final project)</a><br>
-            <a href="SEOProject/index.html">"shoes in a can" website (webdev final project)</a>
-        </nav>
-    </div>
+    <div id="frame">
+        <div id="wrap">
+            <div class="kitty" 
+                onmousedown="window.location.href = 'SEOProject/silly.html'"
+                onmouseover="ftext.innerHTML='meow'"
+                onmouseout="ftext.innerHTML=''">
+                . ／l、<br>
+                （ﾟ､ ｡７ <br>
+                .l、ﾞ~ヽ <br>
+                .じしf_, )ノ
+            </div>
 
-    <div class="kitty">
-        . ／l、<br>
-        （ﾟ､ ｡７ <br>
-        .l、ﾞ~ヽ <br>
-        .じしf_, )ノ
+            <div class="centered">
+                <p>mason kazebeer</p>
+                <nav>
+                    <a href="https://www.github.com/masonkaz"
+                        onmouseover="ftext.innerHTML='school/personal projects'"
+                        onmouseout="ftext.innerHTML=''">github</a><br>
+                    <a href="https://github.com/masonkaz/HearingAssistant/releases/tag/v1.0.0"
+                    onmouseover="ftext.innerHTML='final project for human-computer interaction class'"
+                    onmouseout="ftext.innerHTML=''">hearing assistant</a><br>
+                    <a href="SEOProject/index.html"
+                        onmouseover="ftext.innerHTML='final project for web application development class'"
+                        onmouseout="ftext.innerHTML=''">"shoes in a can" website</a>
+                </nav>
+            </div>
+        </div>
+        <footer>
+            <p id="ftext"></p>
+        </footer>
     </div>
 </body>
 
